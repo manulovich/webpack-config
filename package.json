@@ -1,6 +1,6 @@
 {
-	"name": "webpack-config",
-	"version": "0.1.0",
+	"name": "threejs-demo",
+	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -24,6 +24,7 @@
 		"webpack-dev-server": "^4.7.4"
 	},
 	"dependencies": {
-		"@babel/polyfill": "^7.12.1"
+		"@babel/polyfill": "^7.12.1",
+		"three": "^0.137.5"
 	}
 }

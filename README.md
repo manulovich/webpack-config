@@ -1,15 +1,20 @@
-# Webpack config
+# Демо three js
 
-Простой и пока не рабочий конфиг для верстки:(
+P.s. без претензиий на крутой код
 
 ## Начало работа
 
-Клонируем
+### Запукскаем локально
+
+Клонируем репозиторий:
 ```bash
-git clone https://github.com/manulovich/webpack-config.git
+git clone https://github.com/manulovich/threejs-demo.git
 ```
 
-Устанавливаем зависимости
-```
+Устанавливаем зависимости:
+```bash
 npm i
 ```
+
+### Или...
+Отрываем [сайт]()

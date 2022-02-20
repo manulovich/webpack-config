@@ -10,12 +10,12 @@ module.exports = {
     },
     output: {
         filename: '[name].js', // '[name].[contenthash].js'
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         clean: true
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'dist'),
+            directory: path.join(__dirname, 'docs'),
         },
         compress: true,
         port: 3000,
@@ -31,7 +31,7 @@ module.exports = {
             patterns: [
                 {
                     from: './assets',
-                    to: path.resolve(__dirname, './dist/assets')
+                    to: path.resolve(__dirname, './docs/assets')
                 }
             ]
         })
