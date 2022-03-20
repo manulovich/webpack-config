@@ -8,13 +8,17 @@ const OUTPUT_DIR = 'dist';
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
-        app: ['@babel/polyfill', './scripts/app.js']
+        app: './scripts/app.ts'
     },
     output: {
         filename: 'scripts/[name].js', // '[name].[contenthash].js'
         path: path.resolve(__dirname, OUTPUT_DIR),
         clean: true
     },
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
+
     devServer: {
         static: {
             directory: path.join(__dirname, OUTPUT_DIR),
@@ -53,14 +57,9 @@ module.exports = {
                 ],
             },
             {
-                test: /\.m?js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
             }
         ]
     }
