@@ -15,6 +15,3 @@ git clone https://github.com/manulovich/threejs-demo.git
 ```bash
 npm i
 ```
-
-### Или...
-Отрываем [сайт]()
