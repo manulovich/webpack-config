@@ -18,13 +18,13 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js']
     },
-
     devServer: {
         static: {
             directory: path.join(__dirname, OUTPUT_DIR),
         },
         compress: true,
         port: 3000,
+        watchFiles: ['src/**/*'],
     },
     plugins: [
         new HtmlWebpackPlugin({
